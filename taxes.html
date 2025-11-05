@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxes & Fees – Guleli Gram Panchayat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f2f3f8;
+        }
+        .page-container {
+            display: flex;
+            min-height: 100vh;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(180deg, #5e0fa0, #7f2bb0);
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .sidebar ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: 0.3s;
+        }
+        .sidebar ul li a:hover, .sidebar ul li a.active {
+            background-color: rgba(255,255,255,0.1);
+            padding-left: 25px;
+        }
+        /* Main content */
+        .main-content {
+            flex: 1;
+            padding: 30px;
+        }
+        h2 {
+            color: #f0f0f1;
+            margin-bottom: 15px;
+        }
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        table th, table td {
+            border: 1px solid #9c7aca;
+            padding: 12px;
+            text-align: center;
+        }
+        table th {
+            background-color: #2fe3d2;
+            color: #000;
+        }
+        table td {
+            color: #333;
+        }
+        table caption {
+            caption-side: top;
+            text-align: left;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 10px 0;
+            color: #5e0fa0;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>About Our Village</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="schools.html">Schools</a></li>
+        <li><a href="hospitals.html">Hospitals</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="schemes.html">Schemes/Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+            🌐 Language:
+            <a href="taxes.html">English</a> |
+            <a href="taxes_mr.html">मराठी</a>
+        </li>
+    </ul>
+</nav>
+<div class="page-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="village.html">Village</a></li>
+            <li><a href="members.html">Panchayat Members</a></li>
+            <li><a class="active" href="taxes.html">Taxes/Fees</a></li>
+            
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Fees Table -->
+        <table>
+            <caption>Fees</caption>
+            <thead>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>For</th>
+                    <th>Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Certificate Fee</td><td>Rs 50/-</td></tr>
+                <tr><td>2</td><td>Construction Fees</td><td>Estimated cost * 0.50/100 +150 = Total</td></tr>
+                <tr><td>3</td><td>Debris charges</td><td>Rs 5000/-</td></tr>
+                <tr><td>4</td><td>House tax transfer fees</td><td>Rs 1000/-</td></tr>
+                <tr><td>5</td><td>Minor repair fees</td><td>Rs 200/-</td></tr>
+                <tr><td>6</td><td>R.B.D fees</td><td>Rs 10/- and Rs 5/- service charges</td></tr>
+                <tr><td>7</td><td>Registration of unit fees</td><td>Rs 200/-</td></tr>
+                <tr><td>8</td><td>Registration of unit fees</td><td>Case of debris up to Rs. 1000/-</td></tr>
+                <tr><td>9</td><td>Registration of unit fees</td><td>And maximum Rs. 10000/-</td></tr>
+                <tr><td>10</td><td>Rental premises/houses</td><td>One month’s rent as per leave and license agreement</td></tr>
+                <tr><td>11</td><td>Sanitation Fees</td><td>50% of the licence fees</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Taxes Table -->
+        <table>
+            <caption>Taxes</caption>
+            <thead>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Taxes</th>
+                    <th>For</th>
+                    <th>Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Garbage Tax (per Sq.Mtrs)</td><td>Residential</td><td>8</td></tr>
+                <tr><td>2</td><td>Garbage Tax (per Sq.Mtrs)</td><td>Commercial *</td><td>16</td></tr>
+                <tr><td>3</td><td>House Tax (Per year)</td><td>Residential</td><td>720</td></tr>
+                <tr><td>4</td><td>House Tax (Per year)</td><td>Commercial *</td><td>1000</td></tr>
+                <!-- Add remaining rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+<!-- Footer -->
+
+<footer class="contact-section">
+    <h2><i class="fa-solid fa-building"></i> Contact</h2>
+    <p><strong>Location:</strong> Near Main  Shivaji Chowk, Madaj</p>
+    <p><strong>Office Hours:</strong> Mon-Sat, 10AM – 5PM</p>
+    <p><strong>Phone:</strong> +91 9960930358</p>
+    <p><strong>Email:</strong> gpmadaj1952@gmail.com</p>
+
+   
+</footer>
+</html>
+

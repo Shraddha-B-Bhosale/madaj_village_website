@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vaijnath Maharaj Temple - Gallery</title>
+  <style>
+    body {
+      background: #f5f5f5;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .gallery img {
+      margin: 10px;
+      border-radius: 10px;
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    /* Fullscreen overlay */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      text-align: center;
+    }
+    .lightbox img {
+      margin-top: 5%;
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    /* Show the lightbox when targeted */
+    .lightbox:target {
+      display: block;
+    }
+
+    /* Close button */
+    .close {
+      display: block;
+      color: white;
+      font-size: 24px;
+      margin-top: 15px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vaijnath Maharaj Temple - Gallery</h1>
+
+  <div class="gallery">
+    <a href="#img1"><img src="images/vaijanath Mandir5.jpeg" alt="Temple 1"></a>
+    <a href="#img2"><img src="images/vaijanath Mandir6.jpeg" alt="Temple 2"></a>
+    <a href="#img3"><img src="images/vaijanath Mandir7.jpeg" alt="Temple 3"></a>
+    <a href="#img4"><img src="images/vaijanath Mandir8.jpeg" alt="Temple 4"></a>
+    <a href="#img5"><img src="images/vaijanath Mandir9.jpeg" alt="Temple 3"></a>
+    <a href="#img6"><img src="images/vaijanath Mandir10.jpeg" alt="Temple 3"></a>
+    <a href="#img3"><img src="images/vaijanath Mandir11.jpeg" alt="Temple 3"></a>
+  </div>
+
+  <!-- Lightbox popups -->
+  <div id="img1" class="lightbox">
+    <img src="images/vaijanath Mandir5.jpeg" alt="Temple 1">
+    <a href="#" class="close">Close ✖</a>
+  </div>
+
+  <div id="img2" class="lightbox">
+    <img src="images/vaijanath Mandir6.jpeg" alt="Temple 2">
+    <a href="#" class="close">Close ✖</a>
+  </div>
+
+  <div id="img3" class="lightbox">
+    <img src="images/vaijanath Mandir7.jpeg" alt="Temple 3">
+    <a href="#" class="close">Close ✖</a>
+  </div>
+
+    <div id="img4" class="lightbox">
+    <img src="images/vaijanath Mandir8.jpeg" alt="Temple 3">
+    <a href="#" class="close">Close ✖</a>
+  </div>
+
+    <div id="img5" class="lightbox">
+    <img src="images/vaijanath Mandir10.jpeg" alt="Temple 3">
+    <a href="#" class="close">Close ✖</a>
+  </div>
+
+    <div id="img6" class="lightbox">
+    <img src="images/vaijanath Mandir11.jpeg" alt="Temple 3">
+    <a href="#" class="close">Close ✖</a>
+  </div>
+
+
+  <br><br>
+  <a href="temples.html" style="color:#b7c0ca; background:#007bff;">⬅ Back to Temple Info</a>
+</body>
+</html>

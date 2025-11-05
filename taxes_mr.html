@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कर आणि शुल्क – गुलेली ग्रामपंचायत</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f2f3f8;
+        }
+        .page-container {
+            display: flex;
+            min-height: 100vh;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(180deg, #5e0fa0, #7f2bb0);
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .sidebar ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: 0.3s;
+        }
+        .sidebar ul li a:hover, .sidebar ul li a.active {
+            background-color: rgba(255,255,255,0.1);
+            padding-left: 25px;
+        }
+        /* Main content */
+        .main-content {
+            flex: 1;
+            padding: 30px;
+        }
+        h2 {
+            color: #f0f0f1;
+            margin-bottom: 15px;
+        }
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        table th, table td {
+            border: 1px solid #9c7aca;
+            padding: 12px;
+            text-align: center;
+        }
+        table th {
+            background-color: #2fe3d2;
+            color: #000;
+        }
+        table td {
+            color: #333;
+        }
+        table caption {
+            caption-side: top;
+            text-align: left;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 10px 0;
+            color: #5e0fa0;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>आपल्या गावाबद्दल माहिती</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index_mr.html">मुख्यपृष्ठ</a></li>
+        <li><a href="about_mr.html">माहिती</a></li>
+        <li><a href="temples_mr.html">देवळे</a></li>
+        <li><a href="schools_mr.html">शाळा</a></li>
+        <li><a href="hospitals_mr.html">रुग्णालये</a></li>
+        <li><a href="gallery_mr.html">छायाचित्र संग्रह</a></li>
+        <li><a href="schemes_mr.html">योजना / सेवा</a></li>
+        <li><a href="contact_mr.html">संपर्क</a></li>
+        <li>
+            🌐 Language:
+            <a href="taxes.html">English</a> |
+            <a href="taxes_mr.html">मराठी</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="page-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="village.html">गाव</a></li>
+            <li><a href="members.html">ग्रामपंचायत सदस्य</a></li>
+            <li><a class="active" href="taxes.html">कर / शुल्क</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Fees Table -->
+        <table>
+            <caption>शुल्क</caption>
+            <thead>
+                <tr>
+                    <th>अनुक्रमांक</th>
+                    <th>वापर</th>
+                    <th>दर</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>प्रमाणपत्र शुल्क</td><td>रु. 50 /-</td></tr>
+                <tr><td>2</td><td>इमारत बांधकाम शुल्क</td><td>अनुमानित खर्च * 0.50/100 +150 = एकूण</td></tr>
+                <tr><td>3</td><td>मलबा शुल्क</td><td>रु. 5000 /-</td></tr>
+                <tr><td>4</td><td>घर कर हस्तांतरण शुल्क</td><td>रु. 1000 /-</td></tr>
+                <tr><td>5</td><td>लहान दुरुस्ती शुल्क</td><td>रु. 200 /-</td></tr>
+                <tr><td>6</td><td>R.B.D शुल्क</td><td>रु. 10/- आणि सेवा शुल्क रु. 5 /-</td></tr>
+                <tr><td>7</td><td>युनिट नोंदणी शुल्क</td><td>रु. 200 /-</td></tr>
+                <tr><td>8</td><td>युनिट नोंदणी शुल्क (प्रकरणे)</td><td>रु. 1000/- पर्यंत</td></tr>
+                <tr><td>9</td><td>युनिट नोंदणी शुल्क (जास्तीत जास्त)</td><td>रु. 10000/- पर्यंत</td></tr>
+                <tr><td>10</td><td>भाडेकरू मालमत्ता / घरे</td><td>लीव्ह अँड लायसन्स करारानुसार एका महिन्याचे भाडे</td></tr>
+                <tr><td>11</td><td>स्वच्छता शुल्क</td><td>परवान्याच्या शुल्काच्या 50%</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Taxes Table -->
+        <table>
+            <caption>कर</caption>
+            <thead>
+                <tr>
+                    <th>अनुक्रमांक</th>
+                    <th>कराचा प्रकार</th>
+                    <th>वर्ग</th>
+                    <th>दर</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>कचरा कर (प्रति चौ.मी.)</td><td>निवासी</td><td>8</td></tr>
+                <tr><td>2</td><td>कचरा कर (प्रति चौ.मी.)</td><td>व्यावसायिक</td><td>16</td></tr>
+                <tr><td>3</td><td>घर कर (वार्षिक)</td><td>निवासी</td><td>720</td></tr>
+                <tr><td>4</td><td>घर कर (वार्षिक)</td><td>व्यावसायिक</td><td>1000</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<footer class="contact-section">
+    <h2><i class="fa-solid fa-building"></i> Contact</h2>
+    <p><strong>Location:</strong> Near Main  Shivaji Chowk, Madaj</p>
+    <p><strong>Office Hours:</strong> Mon-Sat, 10AM – 5PM</p>
+    <p><strong>Phone:</strong> +91 9960930358</p>
+    <p><strong>Email:</strong> gpmadaj1952@gmail.com</p>
+
+   
+</footer>
+
+</body>
+</html>

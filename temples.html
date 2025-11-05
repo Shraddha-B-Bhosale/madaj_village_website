@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temples</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+/* Temple Container - 2 per row with nice gaps */
+.temple-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  column-gap: 40px; 
+  row-gap: 40px;   
+  padding: 30px;
+}
+
+/* Temple Card */
+.temple-card {
+  background: #e9bbbb;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for feel */
+.temple-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.temple-card img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.temple-card h2 {
+  color: #1a73e8;
+  margin: 8px 0;
+  font-size: 22px;
+}
+
+/* Festivals Section - Full Width */
+.festivals {
+  width: 100%;               /* full screen width */
+  padding: 40px 60px;        /* वर-खाली + डावीकडं-उजवीकडं spacing */
+  background: #fff;          /* पांढरा background (इच्छेनुसार बदलू शकतो) */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 30px 0;
+}
+
+.festivals h3 {
+  color: #1a73e8;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.festivals ul {
+  list-style: disc inside;   /* neat bullet points */
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* Responsive - Mobile वर 1 per row */
+@media (max-width: 768px) {
+  .temple-container {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+}
+
+
+
+    </style>
+</head>
+<body class="temples">
+
+<header>
+    <p style="font-size: 60px; font-weight: bold;">Temples in Our Village</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="schools.html">Schools</a></li>
+        <li><a href="hospitals.html">Hospitals</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="schemes.html">Schemes/Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+            🌐 Language:
+            <a href="temples.html">English</a> |
+            <a href="temples_mr.html">मराठी</a>
+        </li>
+    </ul>
+</nav>
+
+  
+<div class="temple-container">
+      <div class="temple-card">
+           <img src="images/Premnath Mandir1.png" alt="Premnath Temple">
+           <h2>Premnath Maharaj Temple</h2>
+           <p><strong>Location:</strong>  Mathmal Madaj, Osmanabad</p>
+           <p><strong>Deity:</strong> Premnath Maharaj</p>
+           <p><strong>History:</strong> Story of Premnath Maharaj – Madaj Village
+
+In the village of Adegav in Solapur district, there lived a Patil family. They had no children, so they went to the saints Gurunath Machhindranath and Gorakhnath to seek blessings for a child. The saints said,
+"You will have a child, but your first son must be given to us." The Patils agreed.
+
+Time passed, and the couple had a son. They named him Premnath. But because of their love for the child, they were not ready to give him to the saints. They broke the condition given by the saints. Soon after, one of Premnath Maharaj’s eyes became blind. Seeing this, the parents were very sad and finally gave their son to the saints. At that moment, Maharaj’s eye was restored.
+
+It had been foretold by Gyanobarai:
+"The place where Premnath Maharaj will take Samadhi in the future will be blessed by a miraculous child."
+To fulfill this prophecy, Premnath Maharaj, guided by the saints, came from Adegav to Madaj village.
+
+In Madaj, Maharaj used to graze 300 cows. One of these cows was special — called Devpuji. After performing prayers, Maharaj always offered the first portion of food (Naivedya) to this cow, hence the name “Devpuji.”
+
+One day, Maharaj felt tired and told a servant, "Take the cows for grazing today." At that time, Devpuji was bitten by a snake and died. Hearing this, Maharaj rushed there and lovingly stroked the cow’s back. To everyone’s amazement, the cow came back to life!
+
+This event spread throughout the village. People could hardly believe it. Everyone started saying that Maharaj could bring anyone back to life. Seeing this, Premnath Maharaj thought, "Now people will keep asking me to revive the dead all the time." So, in the month of Margashirsha, he decided to take Sanjiwani Samadhi (live Samadhi).
+
+Later, a beautiful and grand temple was built at his Samadhi site. Even today, every year, a large pilgrimage is held on the auspicious day (Sati). Devotees from many villages come to Madaj with deep faith to seek the blessings of Premnath Maharaj. Even today, the villagers hold great devotion and reverence for Maharaj.</p>
+            <p><strong>Special Events:</strong> Annual fair during Ashadhi Ekadashi.</p>
+            <p><strong>Visiting Hours:</strong> 6:00 AM - 8:00 PM</p>
+            <!-- Know More Button (Link to new page) -->
+          <a href="PremnaththSeeMore.html" class="btn">See More</a>
+      </div>
+
+      <div class="temple-card">
+          <img src="images/vaijnath mandir4.png" alt="Shri Vitthal Temple">   
+          <h2>Vaijnath Maharaj Temple</h2>
+          <p><strong>Location:</strong> Near Main Shivaji Chowk Madaj, Dharashiv</p>
+          <p><strong>Deity:</strong> Lord Vitthal</p>
+          <p><strong>History:</strong><b>Story of Vaijanath Maharaj Temple</b>
+          About 200 years ago, there was a woman from the village.
+          Every month she used to go on a pilgrimage (wari) to Parli Vaijanath.One day, she saw a dream. In the dream, Vaijanath Maharaj told her:
+          “You are coming from very far to visit me.Now, in your own village, go near the pond.
+          There is a small hill there. Dig at that place, you will find a **self-appeared Shivling (Ling).”The woman told this dream to the villagers.
+          All villagers went together and dug the place.From that place, a Shivling appeared.To remember this event, the villagers built a temple near the pond.
+          Elders say the temple is at least 200 years old.Some people believe it may be even 240 years old.
+          Today, the Vaijanath Maharaj Temple is a strong symbol of faith, history, and devotion for the whole village.</p>
+          <p><strong>Special Events:</strong> Ashadhi & Kartiki Ekadashi festivals.</p>
+          <p><strong>Visiting Hours:</strong> 5:00 AM - 10:00 PM</p>
+          <!-- Know More Button (Link to new page) -->
+          <a href="VaijnathSeeMore.html" class="btn">See More</a>
+          
+      </div>
+
+      <div class="temple-card">
+          <img src="images/Shiv Mandir1.jpeg" alt="Shiv Temple">
+          <h2>Shiv Temple</h2>
+          <p><strong>Location:</strong> Hemadpanti Shiv Temple</p>
+          <p><strong>Deity:</strong> Lord Shiv</p>
+          <p><strong>History:</strong> <b>Story of the Shiv Mandir at Madaj</b>
+          Madaj is a village in Dharashiv (Osmanabad) district, Umarga taluka. Today people call it “Dhakate Pandharpur”. In this village, there is a very old Shiv Mandir (temple). 
+          This temple shows us the history of the Chalukya period.Old Record .In the year 1123 (about 901 years ago), the village was called Mulwatti. At that time, an officer named Somras built a temple of Keshav Dev (Vishnu).The Inscription (Stone Writing)
+          In front of the temple, there is an old stone inscription. It is written in old Kannada language. The stone is a little broken at the top and bottom, but it still tells many things.
+          On the stone, pictures of a cow, a sword, and Lord Vishnu are carved.
+          The inscription has 28 lines.It begins with praise of Lord Vishnu in his Varaha avatar (boar form). Then it has a verse in praise of Lord Shiva.
+          Mention of Chalukya Kings.The inscription has names and titles of the Chalukya king Tribhuvan Malladev (Vikramaditya VI). At that time, the Chalukyas ruled from Jayantipur. The inscription was placed on a Sunday, Vaishakh month, Shuddha Trayodashi.
+          Land Donation.Somras, the son of Ballahdev, placed the idol of Keshav Dev at Mulwatti (Madaj). He also gave a lot of land to the temple.
+          The boundaries of this land are written on the stone – from Kondji road pit to Devdutt’s field, and from Tiger hill to Ohol.
+          Later, another king Trailokyamall gave 100 mattar land at Muldighe to Keshav Dev.
+          Warning on the Stone.At the end, the inscription gives a warning:“If anyone breaks or steals this donation, he will be reborn as an insect in cow dung for 60,000 births.”
+          Research Work
+          Historian Krishna Gudde studied this inscription by taking its print. Dr. Ravikumar Navalgund read the text, and Dr. Sujata Shastri helped in translation. Others like Ajinkya Shahane, Abhay Parande, and Satyanarayan Jadhav also helped.
+          Pride of Madaj
+          Today, the Shiv Mandir of Madaj is not only a holy place but also a symbol of Chalukya history and culture. It keeps alive the glory of our ancestors.</p>
+          <p><strong>Visiting Hours:</strong> 5:00 AM - 8:00 PM</p>
+          <!-- Know More Button (Link to new page) -->
+          <a href="ShivSeeMore.html" class="btn">See More</a>
+      </div>
+
+      <div class="temple-card">
+          <img src="images/Mauli Mandir1.png" alt="Shri Mahadev Temple">
+          <h2>Shri Mauli Temple</h2>
+          <p><strong>Location:</strong> Dakshin Madaj,dharashiv</p>
+          <p><strong>Deity:</strong> Lord Mauli</p>
+          <p><strong>History:</strong> Story of Shri Mauli Temple – Dakshin Madaj
+
+Dakshin Madaj is a part of Madaj village in Dharashiv district. Long ago, people lived there, but there was no temple nearby. So, the villagers felt that they should have a holy place where they could go every day — to pray, to touch God’s feet, and to find peace.
+
+With this thought, the people together built the Shri Mauli Temple, dedicated to Lord Mauli (Vitthal).
+
+In the beginning, the temple was simple. But because of people’s strong faith, it became a beautiful and peaceful place filled with devotion and love. Now, every day, villagers visit the temple for prayer, bhajan, and darshan.
+
+Every year, in the month of May, a spiritual week (Saptah) is held. During this week, people read Dnyaneshwari, sing bhajans, and perform kirtans. The whole village becomes full of devotion and joy.
+
+Today, the Shri Mauli Temple is a symbol of the faith and unity of the people of Dakshin Madaj. 
+          <p><strong>Visiting Hours:</strong> 5:30 AM - 10:00 PM</p>
+          <!-- Know More Button (Link to new page) -->
+          <a href="MauliSeeMore.html" class="btn">See More</a>
+      </div>
+</div>
+
+
+
+<!-- Map 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12093.12839212369!2d75.6601!3d18.5256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e5a2f7c99c7f%3A0xa8d8b82b0fda6efb!2sPandharpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1692000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>                     -->
+
+<!-- Festivals Section -->
+<div class="festivals">
+  <h3>Festivals & Events</h3>
+  <ul>
+    <li><strong>Ashadhi Ekadashi:</strong> At Premnath Maharaj Temple, with devotional singing and processions.</li>
+    <li><strong>Kartiki Ekadashi:</strong> At Shri Vaijnath Temple, special prayers and rituals.</li>
+    <li><strong>Maha Shivaratri:</strong> At Shri Mahadev Temple, night-long prayers and rituals.</li>
+  </ul>
+</div>
+
+
+</body>
+<!-- Footer -->
+
+<footer class="contact-section">
+    <h2><i class="fa-solid fa-building"></i> Contact</h2>
+    <p><strong>Location:</strong> Near Main  Shivaji Chowk, Madaj</p>
+    <p><strong>Office Hours:</strong> Mon-Sat, 10AM – 5PM</p>
+    <p><strong>Phone:</strong> +91 9960930358</p>
+    <p><strong>Email:</strong> gpmadaj1952@gmail.com</p>
+</footer>
+
+
+</html>
